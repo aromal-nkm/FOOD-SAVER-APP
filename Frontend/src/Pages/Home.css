@@ -1,0 +1,35 @@
+.img-container {
+    position: relative; /* To position the paragraph over the image */
+    width: 100%;
+    max-width:1600px; /* Set max width to match your image */
+    margin: auto; /* Center the container */
+  }
+  
+  .header-image {
+    margin-top:20px;
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures there’s no extra space below the image */
+    border-radius: 10px; /* Optional: adds rounded corners */
+  }
+  
+  #para {
+    position: absolute; /* Position over the image */
+    bottom: 20px; /* Distance from the bottom */
+    left: 35%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+    padding: 0px; /* Padding around the text */
+    border-radius: 20px; /* Optional: rounded corners for the text box */
+    text-align: center; /* Center the text */
+    font-size: 30px;
+    margin-bottom: 90px;
+    margin-left: 10px;
+  }
+  
+  .paradiv{
+    width: 100px;
+    height: auto;
+   
+  }

@@ -1,0 +1,50 @@
+/* nav.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e2f; /* Dark background */
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: -60px;
+    margin-right: -60px;
+    margin-top: -50px;
+  }
+  
+  .navbar img {
+    height: 50px; /* Logo height */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove bullets */
+    display: flex;
+    gap: 20px; /* Space between items */
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    transition: color 0.3s; /* Smooth color transition */
+  }
+  
+  ul li:hover {
+    color: #ff6f61; /* Highlight color on hover */
+  }
+  
+  button {
+    background-color: #ff6f61; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+  }
+  
+  button:hover {
+    background-color: #e65c50; /* Darker shade on hover */
+  }
+  
