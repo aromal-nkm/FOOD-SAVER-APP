@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Nav from './Components/Nav'
 import Home from './Pages/Home'
+import DonorForm from './Pages/DonorForm'
+import {Route, Routes} from 'react-router-dom'
 
 
 
@@ -13,8 +15,15 @@ function App() {
 
   return (
     <>
-    <Nav/>
-    <Home/>
+      <Nav></Nav>  
+      <Routes>
+    <Route path='/' element= {<Home/>}></Route>
+    <Route path='/donor' element={<DonorForm/>}></Route>
+    <Route path='/' element={<DonorForm/>}></Route>
+
+
+   </Routes>
+   
    
     </>
   )

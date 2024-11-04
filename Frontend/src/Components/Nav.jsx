@@ -1,6 +1,7 @@
 import React from 'react'
 import { assets } from '../assets/assets'
 import './Nav.css'
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
@@ -8,9 +9,9 @@ const Nav = () => {
     <div    className='navbar'>
      <img src={assets.logo} alt="" />
      <ul>
-        <li>HOME</li>
-        <li>DONOR</li>
-        <li>COLLECTING TEAM</li>
+     <Link to={'/'}>   <li>HOME</li> </Link>
+     <Link to={'/donor'}><li>DONOR</li></Link>
+     <Link to={'/collect'}><li>COLLECTING TEAM</li></Link>
         <li>CONTACT US</li>
      </ul>
      <button> Login</button>
