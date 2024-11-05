@@ -10,6 +10,7 @@ import {Route, Routes} from 'react-router-dom'
 
 
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,7 +20,7 @@ function App() {
       <Routes>
     <Route path='/' element= {<Home/>}></Route>
     <Route path='/donor' element={<DonorForm/>}></Route>
-    <Route path='/' element={<DonorForm/>}></Route>
+    
 
 
    </Routes>
