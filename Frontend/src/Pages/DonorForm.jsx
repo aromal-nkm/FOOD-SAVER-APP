@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import './DonorForm.css'; // Import the CSS file
+import axios from 'axios'; // Import axios
 
 const DonorForm = () => {
   const [formData, setFormData] = useState({
@@ -44,9 +45,22 @@ const DonorForm = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+
+    try {
+      // Send the form data to the backend API
+      const response = await axios.post('http://localhost:5000/api/donors', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      console.log('Form submitted:', response.data);
+      alert('Donor data submitted successfully!');
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Error submitting donor data.');
+    }
   };
 
   return (
