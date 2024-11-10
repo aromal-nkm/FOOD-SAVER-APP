@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const donorRoutes = require('./routes/donorRoutes');
-
+const collectionRoutes = require('./routes/collectionRoutes'); 
 dotenv.config();
 
 const app = express();
@@ -20,7 +20,7 @@ app.use(express.json()); // for parsing application/json
 
 // Routes
 app.use('/api/donors', donorRoutes);
-
+app.use('/api/collections', collectionRoutes);
 // MongoDB connection
 require('./db/connection');
 // Server listening

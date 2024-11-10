@@ -6,6 +6,7 @@ import Nav from './Components/Nav'
 import Home from './Pages/Home'
 import DonorForm from './Pages/DonorForm'
 import {Route, Routes} from 'react-router-dom'
+import CollectionTeam from './Pages/CollectionTeam'
 
 
 
@@ -20,7 +21,7 @@ function App() {
       <Routes>
     <Route path='/' element= {<Home/>}></Route>
     <Route path='/donor' element={<DonorForm/>}></Route>
-    
+    <Route path='/collect' element={<CollectionTeam/>}></Route>
 
 
    </Routes>

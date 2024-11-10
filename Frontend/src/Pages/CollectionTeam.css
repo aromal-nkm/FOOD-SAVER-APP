@@ -1,0 +1,36 @@
+.collection-container {
+    padding: 20px;
+  }
+  
+  .collection-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+  
