@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Navigate, useNavigate } from 'react-router-dom';
-import './Login.css'
+import { useNavigate } from 'react-router-dom';
+import './Login.css';
 
 const Login = () => {
-  const [uname, setUname] = useState(''); // Changed from setEmail to setUname
-  const [pwd, setPwd] = useState(''); // Changed from setPassword to setPwd
- const navigate=useNavigate();
+  const [uname, setUname] = useState('');
+  const [pwd, setPwd] = useState('');
+  const navigate = useNavigate();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -18,9 +19,10 @@ const Login = () => {
       alert(error.response?.data?.message || 'Invalid credentials');
     }
   };
-  const register=()=>{
-    navigate('/register')
-  }
+
+  const register = () => {
+    navigate('/register');
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -31,6 +33,7 @@ const Login = () => {
           type="text"
           value={uname}
           onChange={(e) => setUname(e.target.value)}
+          placeholder="Enter your username"
           required
         />
       </div>
@@ -40,14 +43,14 @@ const Login = () => {
           type="password"
           value={pwd}
           onChange={(e) => setPwd(e.target.value)}
+          placeholder="Enter your password"
           required
         />
       </div>
       <button type="submit">Login</button>
-      <button onClick={register}>clickhere</button>
+      <button type="button" onClick={register}>Create New Account</button>
     </form>
   );
 };
 
 export default Login;
-
