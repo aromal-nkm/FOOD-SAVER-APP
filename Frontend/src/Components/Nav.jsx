@@ -14,7 +14,7 @@ const Nav = () => {
      <Link to={'/collect'}><li>COLLECTING TEAM</li></Link>
         <li>CONTACT US</li>
      </ul>
-     <button> Login</button>
+     <li><Link to="/login"><button>Login</button></Link></li>
 
      
 

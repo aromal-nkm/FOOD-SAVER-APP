@@ -7,6 +7,7 @@ import axios from 'axios'; // Import axios
 const DonorForm = () => {
   const [formData, setFormData] = useState({
     name: '',
+    email: '',
     location: '',
     contactNumber: '',
     itemDescription: '',
@@ -73,6 +74,17 @@ const DonorForm = () => {
             type="text"
             name="name"
             value={formData.name}
+            onChange={handleChange}
+            required
+            className="form-input"
+          />
+        </div>
+        <div className="form-group">
+          <label>Email:</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
             onChange={handleChange}
             required
             className="form-input"

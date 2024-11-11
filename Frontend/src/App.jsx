@@ -7,6 +7,9 @@ import Home from './Pages/Home'
 import DonorForm from './Pages/DonorForm'
 import {Route, Routes} from 'react-router-dom'
 import CollectionTeam from './Pages/CollectionTeam'
+import Login from './Components/Login'
+import Register from './Components/Register'
+import Footer from './Components/Footer'
 
 
 
@@ -18,14 +21,15 @@ function App() {
   return (
     <>
       <Nav></Nav>  
+
       <Routes>
     <Route path='/' element= {<Home/>}></Route>
     <Route path='/donor' element={<DonorForm/>}></Route>
     <Route path='/collect' element={<CollectionTeam/>}></Route>
-
-
+    <Route path='/login' element={<Login/>}></Route>
+    <Route path='/register' element={<Register/>}></Route>
    </Routes>
-   
+   <Footer/>
    
     </>
   )

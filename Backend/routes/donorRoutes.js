@@ -6,7 +6,7 @@ const Donor = require('../models/donorModel');
 // POST: Create a new donor
 router.post('/', async (req, res) => {
   try {
-    const { name, location, contactNumber, itemDescription, cookedDateTime, expirationTime } = req.body;
+    const { name, location, contactNumber, itemDescription, cookedDateTime, expirationTime,email } = req.body;
 
     // Create a new donor document
     const newDonor = new Donor({
@@ -14,6 +14,7 @@ router.post('/', async (req, res) => {
       location,
       contactNumber,
       itemDescription,
+      email,
       cookedDateTime,
       expirationTime
     });

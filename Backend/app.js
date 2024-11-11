@@ -5,6 +5,8 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const donorRoutes = require('./routes/donorRoutes');
 const collectionRoutes = require('./routes/collectionRoutes'); 
+const emailRoutes = require('./routes/emailRoutes')
+const userRoutes = require('./routes/userRoutes')
 dotenv.config();
 
 const app = express();
@@ -21,6 +23,8 @@ app.use(express.json()); // for parsing application/json
 // Routes
 app.use('/api/donors', donorRoutes);
 app.use('/api/collections', collectionRoutes);
+app.use('/api/mail',emailRoutes)
+app.use('/api/user',userRoutes)
 // MongoDB connection
 require('./db/connection');
 // Server listening

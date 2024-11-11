@@ -5,6 +5,7 @@ const donorSchema = new mongoose.Schema({
   name: { type: String, required: true },
   location: { type: String, required: true },
   contactNumber: { type: String, required: true },
+  email:{type:String},
   itemDescription: { type: String, required: true },
   cookedDateTime: { type: Date, required: true },
   expirationTime: { type: String, required: true },
