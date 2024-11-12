@@ -13,7 +13,7 @@ const Login = () => {
     try {
       const { data } = await axios.post('http://localhost:5000/api/user/login', { uname, pwd });
       alert('Login successful');
-      navigate('/');
+      navigate('/home');
     } catch (error) {
       console.error(error);
       alert(error.response?.data?.message || 'Invalid credentials');

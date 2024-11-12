@@ -37,15 +37,15 @@ const Footer = () => {
         {/* Contact Information */}
         <div className="footer-contact">
           <h3>Contact Us</h3>
-          <p>Email: support@yourcompany.com</p>
-          <p>Phone: +123 456 7890</p>
-          <p>Address: 1234 Elm St, Cityville, State</p>
+          <p>Email: foodsaver donations@gmail.com</p>
+          <p>Phone: 80909080</p>
+          <p>Address: , kerala</p>
         </div>
       </div>
       
       {/* Copyright Section */}
       <div className="footer-bottom">
-        <p>&copy; 2024 YourCompany. All Rights Reserved.</p>
+        <p>&copy; 2024 Food saver . All Rights Reserved.</p>
       </div>
     </footer>
   );
