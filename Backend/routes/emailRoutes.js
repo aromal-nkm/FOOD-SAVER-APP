@@ -37,7 +37,7 @@ router.post('/sendMail/:id', async (req, res) => {
       from: 'aromalnklm@gmail.com', // Replace with your email
       to: donor.email,
       subject: 'Thank You for Your Donation',
-      text: `Dear ${donor.name},\n\nThank you for your generous donation of ${donor.itemDescription}. Your contribution helps us serve those in need.\n\nBest regards,\n[Your Team Name]`,
+      text: `Dear ${donor.name},\n\nThank you for your generous donation of ${donor.itemDescription}. Your contribution helps us serve those in need it will be collected in few hours.\n\nBest regards,\n[Your Team Name]`,
     };
 
     // Send the email

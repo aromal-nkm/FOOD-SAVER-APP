@@ -10,6 +10,7 @@ import CollectionTeam from './Pages/CollectionTeam'
 import Login from './Components/Login'
 import Register from './Components/Register'
 import Footer from './Components/Footer'
+import AboutUs from './Pages/Aboutus'
 
 
 
@@ -28,6 +29,7 @@ function App() {
     <Route path='/collect' element={<CollectionTeam/>}></Route>
     <Route path='/login' element={<Login/>}></Route>
     <Route path='/register' element={<Register/>}></Route>
+    <Route path='/about' element={<AboutUs/>}></Route>
    </Routes>
    <Footer/>
    

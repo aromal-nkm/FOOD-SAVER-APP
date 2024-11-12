@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './collectionTeam.css'; // Import corresponding CSS for styling
+import './collectionTeam.css'; 
 
 const CollectionTeam = () => {
   const [donors, setDonors] = useState([]);
